@@ -1,0 +1,23 @@
+body{
+  margin:0;
+}
+
+ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.search-holder{
+  text-align:center;
+  height:100px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+#search-bar{
+  margin-top: 20px;
+  height:40px;
+  width:300px;
+  border-style:solid;
+  border-color:#ADD8E6;
+}
