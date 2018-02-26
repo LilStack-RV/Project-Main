@@ -1,0 +1,82 @@
+html{
+  height:100%;
+}
+
+body{
+  height:100%;
+  margin:0px;
+  display:flex;
+  flex-direction:row;
+}
+
+.main-holder{
+  text-align:center;
+  padding-top:60px;
+  background-color: red;
+  width:100%;
+  display:inline-block;
+  background: linear-gradient(rgba(0,130,170,0.5),rgba(0,130,170,1)), url("../images/center-city-charlotte.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  background-blend-mode:lighten;
+}
+
+.main-holder-titleHolder{
+  width:100%;
+}
+
+.text-left{
+  text-align:left;
+}
+
+.text-right{
+  text-align:right;
+}
+
+.main-holder-headerLeft{
+  font-family:Tahoma, Verdana;
+  color: white;
+  background-color:black;
+  margin:0px;
+  padding-left:200px;
+  padding-right:20px;
+  padding-top:15px;
+  padding-bottom:15px;
+  display:inline-block;
+}
+
+.main-holder-headerRight{
+  font-family:Tahoma, Verdana;
+  color: white;
+  background-color:black;
+  margin:0px;
+  padding-left:20px;
+  padding-right:200px;
+  padding-top:15px;
+  padding-bottom:15px;
+  display:inline-block;
+}
+
+.main-holder-container{
+  margin-top:80px;
+  padding-top:10px;
+  height:300px;
+  width:700px;
+  display:inline-block;
+  text-align:center;
+}
+
+.main-holder-searchbar{
+  margin-top:70px;
+  display:inline-block;
+  width:400px;
+  height:20px;
+  margin-left:0px;
+}
+
+.main-holder-button{
+  margin-top:40px;
+  display:inline-block;
+  width:200px;
+}
