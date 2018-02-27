@@ -1,0 +1,13 @@
+.content-holder{
+  display: flex;
+  flex-direction: column;
+}
+
+.info-holder{
+  width:100%;
+  height:200px;
+  text-align:center;
+  border-width:thin;
+  border-color:blue;
+  border-style:groove;
+}
