@@ -23,6 +23,7 @@ body{
 }
 
 .main-holder-titleHolder{
+   padding-top:120px;
   width:100%;
 }
 
@@ -31,13 +32,15 @@ body{
 }
 
 .text-right{
+   padding-top:15px;
+   padding-bottom:15px;
   text-align:right;
 }
 
 .main-holder-headerLeft{
   font-family:Tahoma, Verdana;
   color: white;
-  background-color:black;
+  background-color: #222;
   margin:0px;
   padding-left:200px;
   padding-right:20px;
@@ -49,7 +52,7 @@ body{
 .main-holder-headerRight{
   font-family:Tahoma, Verdana;
   color: white;
-  background-color:black;
+  background-color:#222;
   margin:0px;
   padding-left:20px;
   padding-right:200px;
@@ -59,7 +62,7 @@ body{
 }
 
 .main-holder-container{
-  margin-top:80px;
+  margin-top:30px;
   padding-top:10px;
   height:300px;
   width:700px;

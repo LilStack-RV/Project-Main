@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--Import jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>Lil Stack - landing page</title>
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body id="homepage">
-  <div class="main-holder">
-    <div class="main-holder-titleHolder text-left">
-      <h1 class="main-holder-headerLeft">Welcome to our credit card finder</h1>
-    </div>
-  </br>
-    <div class="main-holder-titleHolder text-right">
-      <h1 class="main-holder-headerRight">Brought to you by lil Stack</h1>
-    </div>
 
-    <div class="main-holder-container">
-      <input type="text" placeholder="Search credit card here..." class="main-holder-searchbar">
-      <br/>
-      <input type="button" value="Browse" class="main-holder-button">
-      <br/>
-    </div>
-  </div>
+<head>
+   <!--Import jquery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <title>Lil Stack - landing page</title>
+   <link rel="stylesheet" href="css/index.css">
+   <link href="css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+   <link href="css/bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet" />
+   <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body id="homepage">
+
+   <div class="main-holder">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#">Card Crack</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">Get Started</a></li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse
+          <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#">Travel</a></li>
+                     <li><a href="#">0% Intro APR</a></li>
+                     <li><a href="#">No Annual Fee</a></li>
+                     <li><a href="#">Cash Back</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Search</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="main-holder-titleHolder text-left">
+         <h1 class="main-holder-headerLeft">Welcome to our credit card finder</h1>
+      </div>
+      </br>
+      <div class="main-holder-titleHolder text-right">
+         <h1 class="main-holder-headerRight">Brought to you by lil Stack</h1>
+      </div>
+
+      <div class="main-holder-container">
+         <input type="text" placeholder="Search credit card here..." class="main-holder-searchbar">
+         <br/>
+         <input type="button" value="Browse" class="main-holder-button">
+         <br/>
+      </div>
+   </div>
 </body>
+
 </html>
