@@ -45,12 +45,28 @@
       </div>
 
       <div class="main-holder-container">
-         <input type="text" placeholder="Search credit card here..." class="main-holder-searchbar">
+         <input type="text" placeholder="Search credit card here..." id="searchbar" class="main-holder-searchbar">
+         <div id="dropdown" class="search-bar-dropdown">
+           <!--Will append search results here-->
+         </div>
          <br/>
          <input type="button" value="Browse" class="main-holder-button">
          <br/>
       </div>
    </div>
 </body>
-
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCvX1HUmLmokveaL2jCwg3rIuVa6_ok20s",
+    authDomain: "lil-stack-consulting.firebaseapp.com",
+    databaseURL: "https://lil-stack-consulting.firebaseio.com",
+    projectId: "lil-stack-consulting",
+    storageBucket: "lil-stack-consulting.appspot.com",
+    messagingSenderId: "29533452063"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="jscript/index.js"></script>
 </html>

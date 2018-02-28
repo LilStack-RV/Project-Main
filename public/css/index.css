@@ -83,3 +83,27 @@ body{
   display:inline-block;
   width:200px;
 }
+
+.search-bar-dropdown{
+  width:400px;
+  margin-top:0;
+  display: inline-block;
+  text-align: center;
+  height:100px;
+  overflow-y:scroll;
+  visibility:hidden;
+}
+
+.search-bar-dropdown > a{
+  display:inline-block;
+  width:400px;
+  background-color:white;
+  color:black;
+  margin-top:0;
+  margin-bottom:0;
+  border-width:thin;
+  border-style:solid;
+  border-color:black;
+  height:20px;
+  text-align:center;
+}
