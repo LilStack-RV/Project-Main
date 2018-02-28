@@ -6,49 +6,85 @@
   <title>Browse credit cards here</title>
   <link rel="stylesheet" href="../css/site-wide.css">
   <link rel="stylesheet" href="../css/postApplication.css">
-  <link href="../css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
-  <link href="../css/bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet" />
+  <link href="../css/bootstrap/bootstrap.css" rel="stylesheet" />
+  <link href="../css/bootstrap/bootstrap-theme.css" rel="stylesheet" />
   <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Card Crack</a>
-         </div>
-         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Get Started</a></li>
-            <li class="dropdown">
-               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse
-       <span class="caret"></span></a>
-               <ul class="dropdown-menu">
-                  <li><a href="#">Travel</a></li>
-                  <li><a href="#">0% Intro APR</a></li>
-                  <li><a href="#">No Annual Fee</a></li>
-                  <li><a href="#">Cash Back</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Search</a></li>
-         </ul>
-      </div>
-   </nav>
-   <div class="main-holder">
-  <h1>Thank you for your application!</h1>
-  <h2>Please fill out this optional post-application survey</h2>
-  <div class="exit-survey">
-    <textarea id="general-comments" placeholder="Put your general comments here..." class="text-area"></textarea>
-    <textarea id="suggestion-comments" placeholder="Have suggestions? We'd love to here them" class="text-area"></textarea>
-    <p>Rate your satisfaction with your credit card experience</p>
-    <select>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+   <!-- navbar here-->
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light font-weight-bold navbar" style="background-color: #ffaa80; ">
+<a class="navbar-brand" href="#">Our Name</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-  </div>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+   <li class="nav-item active">
+     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="#">Browse</a>
+   </li>
+   <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <!-- Dropdown-->
+     </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <div class="dropdown-divider"></div>
+       <a class="dropdown-item" href="#">Something else here</a>
+     </div>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link" href="#">Search</a>
+   </li>
+</ul>
+<form class="form-inline my-2 my-lg-0">
+   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+   <button class="btn btn-outline-success text-primary my-2 my-sm-0" type="submit">Search</button>
+</form>
+</div>
+</nav>
+<!-- navbar ends here -->
+
+   <div class="main-holder">
+      <h2 style="text-align:center;">Your feedback is important to us.</h2>
+      <h3>Pleeeeeease fill out this customer satisfaction survey so that
+         we can improve our service to better meet your needs.</h3>
+       <form method="post">
+         <!--make a results page!! action="/results_page.php"-->
+         Rate the quality of this resource:<br>
+         <input type="radio" name="quality" value="veryhigh"> Very high quality<br>
+         <input type="radio" name="quality" value="high"> High quality<br>
+         <input type="radio" name="quality" value="neither"> Neither high nor low quality<br>
+         <input type="radio" name="quality" value="low"> Low quality<br>
+         <input type="radio" name="quality" value="verylow"> Very low quality<br>
+         <br>
+         Did this resource meet your needs?<br>
+         <input type="radio" name="needs" value="yes"> Yes<br>
+         <input type="radio" name="needs" value="no"> No<br>
+         <br>
+         How likely are you to recommend this resource ro a friend or family member?<br>
+         <input type="radio" name="recommend" value="verylikely"> Very likely<br>
+         <input type="radio" name="recommend" value="likely"> Likely<br>
+         <input type="radio" name="recommend" value="neutral"> Neutral<br>
+         <input type="radio" name="recommend" value="unlikely"> Unlikely<br>
+         <input type="radio" name="recommend" value="veryunlikely"> Very unlikely<br>
+         <br>
+         Overall, how satisfied are you with this resource?<br>
+         <input type="radio" name="satisfied" value="verysatisfied"> Very satisfied<br>
+         <input type="radio" name="satisfied" value="satisfied"> Satisfied<br>
+         <input type="radio" name="satisfied" value="neither"> Neither<br>
+         <input type="radio" name="satisfied" value="unsatisfied"> Unsatisfied<br>
+         <input type="radio" name="satisfied" value="veryunsatisfied"> Very unsatisfied<br>
+         <br>
+         Do you have any other questions, comments, or concerns?<br>
+         <input type="text" name="lastname" value="">
+         <br><br>
+         <input type="submit" value="Submit">
+       </form>
   </div>
 
 </body>
