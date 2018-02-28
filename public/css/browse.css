@@ -1,28 +1,65 @@
-.filter-holder{
-  text-align: center;
+body {
+   height: 100%;
+   margin: 0px;
 }
 
-.filter-selector{
-  width:100px;
+.main-holder {
+   margin-top: 0px;
+   background: #cceeff;
 }
 
-.browse-holder{
-  display:flex;
-  flex-direction:column;
+.search-holder {
+   padding-top: 100px;
 }
 
-.browse-results-row{
-  display:flex;
-  flex-direction:row;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 33.3%;
+.filter-holder {
+   padding-top: 100px;
+   text-align: center;
 }
 
-.browse-result{
-  height:100px;
-  flex-grow:0;
-  flex-shrink:0;
-  flex-basis:33.3%;
-  text-align:center;
+.filter-selector {
+   width: 100px;
+}
+
+.browse-holder {
+   display: flex;
+   flex-direction: column;
+}
+
+.row {
+   padding: 30px;
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 33.3%;
+}
+
+.card {
+   margin-left: 25px;
+   margin-right: 25px;
+}
+
+.col-lg-4 {
+   padding: 40px;
+   border: 40px;
+}
+
+.card-text {
+   padding-left: 10px;
+   padding-right: 10px;
+   height: 400px;
+   background-color: #f6f6f6;
+}
+
+.card-block{
+   margin-left: 15 px;
+   margin-right: 15 px;
+   background-color: #404040;
+}
+
+.card-block-card-header {
+   background-color: #404040;
+}
+
+.card{
+   background-color: #404040;
 }
