@@ -43,7 +43,7 @@ body{
 .main-holder-headerLeft{
   font-family:Tahoma, Verdana;
   color: white;
-  background-color: #404040;
+  background-color: #222;
   margin:0px;
   padding-left:200px;
   padding-right:20px;
@@ -55,7 +55,7 @@ body{
 .main-holder-headerRight{
   font-family:Tahoma, Verdana;
   color: white;
-  background-color:#404040;
+  background-color:#222;
   margin:0px;
   padding-left:20px;
   padding-right:200px;
