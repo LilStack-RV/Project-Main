@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+  <!--Import jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Search credit cards here</title>
+  <link rel="stylesheet" href="../css/site-wide.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="content-holder">
+    <div class="info-holder">
+      <h1>Breakdown of # of applications per card goes here</h1>
+    </div>
+    <div class="info-holder">
+      <h1>Applications by feature filter here</h1>
+    </div>
+    <div class="info-holder">
+      <h1>Breakdown of user pref. by demographic here</h1>
+    </div>
+    <div class="info-holder">
+      <h1>user preference by geolocation</h1>
+    </div>
+    <div class="info-holder">
+      <h1>Recommended "perfect" credit card</h1>
+    </div>
+  </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCvX1HUmLmokveaL2jCwg3rIuVa6_ok20s",
+    authDomain: "lil-stack-consulting.firebaseapp.com",
+    databaseURL: "https://lil-stack-consulting.firebaseio.com",
+    projectId: "lil-stack-consulting",
+    storageBucket: "lil-stack-consulting.appspot.com",
+    messagingSenderId: "29533452063"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <!--Import jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>Apply</title>
+  <title>Browse credit cards here</title>
   <link rel="stylesheet" href="../css/site-wide.css">
   <link rel="stylesheet" href="../css/apply.css">
   <link href="../css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -22,10 +22,10 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
    <li class="nav-item active">
-     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
    </li>
    <li class="nav-item">
-     <a class="nav-link" href="browse.html">Browse</a>
+     <a class="nav-link" href="#">Browse</a>
    </li>
    <li class="nav-item dropdown">
      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,12 +39,12 @@
      </div>
    </li>
    <li class="nav-item">
-     <a class="nav-link" href="search.html">Search</a>
+     <a class="nav-link" href="#">Search</a>
    </li>
 </ul>
 <form class="form-inline my-2 my-lg-0">
    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-   <button class="btn btn-outline-dark text-white my-2 my-sm-0" type="submit">Search</button>
+   <button class="btn btn-outline-success text-primary my-2 my-sm-0" type="submit">Search</button>
 </form>
 </div>
 </nav>
@@ -59,27 +59,27 @@
       <h3>Details about the card.</h3>
       <form method="post">
         First Name
-        <input type="text" name="firstname" value="" id="firstnametag">
+        <input type="text" name="firstname" value="">
         Middle Initial
-        <input type="text" name="middle" value="" id="middleinitialtag">
+        <input type="text" name="middle" value="">
         Last Name
-        <input type="text" name="lastname" value="" id="lastinitialtag">
+        <input type="text" name="lastname" value="">
         <br> <br> Date of birth:
-        <input type="text" name="month" value="MM" id="monthtag"> /
-        <input type="text" name="day" value="DD" id="daytag"> /
-        <input type="text" name="year" value="YYYY" id="yeartag">
+        <input type="text" name="month" value="MM"> /
+        <input type="text" name="day" value="DD"> /
+        <input type="text" name="year" value="YYYY">
         <br> <br> Social Security Number:
-        <input type="text" name="ssn" value="" id="ssntag">
+        <input type="text" name="ssn" value="">
         <br> <br> Are you a citizen of the United States?<br>
-        <input type="radio" name="citizen" value="yes" id="yescitizen"> Yes
-        <input type="radio" name="citizen" value="no" id="nocitizen"> No
+        <input type="radio" name="citizen" value="yes"> Yes
+        <input type="radio" name="citizen" value="no"> No
         <br> <br> Address:
-        <input type="text" name="address" value="Street Address" id="streetaddresstag">
-        <input type="text" name="apt" value="Apt/Suite" id="apttag">
-        <input type="text" name="city" value="City" id="citytag">
-        <input type="text" name="zipcode" value="Zip Code" id="zipcodetag">
+        <input type="text" name="address" value="Street Address">
+        <input type="text" name="apt" value="Apt/Suite">
+        <input type="text" name="city" value="City">
+        <input type="text" name="zipcode" value="Zip Code">
 
-        <select name="state" id="statetag">
+        <select name="state">
           <option value="none">Select a state</option>
           <option value="AL">Alabama</option>
     	     <option value="AK">Alaska</option>
@@ -134,12 +134,12 @@
     	                         <option value="WY">Wyoming</option>
         </select>
         <br> <br> Email
-        <input type="text" name="email" value="" id="emailtag">
+        <input type="text" name="email" value="">
         <br> <br> Phone
-        <input type="text" name="area" value="" id="phoneArea"> -
-        <input type="text" name="first3" value="" id="phonefirst3Tag"> -
-        <input type="text" name="last4" value="" id="phoneLast4Tag">
-        <br> <br> Employment status <br> <select name="employment" size="5" id="employmentTag">
+        <input type="text" name="area" value=""> -
+        <input type="text" name="first3" value=""> -
+        <input type="text" name="last4" value="">
+        <br> <br> Employment status <br> <select name="employment" size="5">
           <option value="employed">Employed</option>
           <option value="selfemployed">Self-Employed</option>
           <option value="retired">Retired</option>
@@ -147,11 +147,11 @@
           <option value="unemployed">Unemployed</option>
         </select>
         <br> <br> Income
-        <input type="text" name="income" value="" id="incomeTag">
+        <input type="text" name="income" value="">
         <br> <br> Monthly Housing Payment
-        <input type="text" name="rent" value="" id="housingIncomeTag">
+        <input type="text" name="rent" value="">
         <p> Should we include the terms and conditions? </p>
-        <input type="submit" value="Submit" id="submitTag">
+        <input type="submit" value="Submit">
       </form>
     </div>
   </div>

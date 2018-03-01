@@ -3,7 +3,7 @@
 <head>
   <!--Import jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>Post APP</title>
+  <title>Browse credit cards here</title>
   <link rel="stylesheet" href="../css/site-wide.css">
   <link rel="stylesheet" href="../css/postApplication.css">
   <link href="../css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -21,10 +21,10 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
    <li class="nav-item active">
-     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
    </li>
    <li class="nav-item">
-     <a class="nav-link" href="browse.html">Browse</a>
+     <a class="nav-link" href="#">Browse</a>
    </li>
    <li class="nav-item dropdown">
      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,12 +38,12 @@
      </div>
    </li>
    <li class="nav-item">
-     <a class="nav-link" href="search.html">Search</a>
+     <a class="nav-link" href="#">Search</a>
    </li>
 </ul>
 <form class="form-inline my-2 my-lg-0">
    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-   <button class="btn btn-outline-dark text-white my-2 my-sm-0" type="submit">Search</button>
+   <button class="btn btn-outline-success text-primary my-2 my-sm-0" type="submit">Search</button>
 </form>
 </div>
 </nav>
@@ -56,34 +56,34 @@
        <form method="post">
          <!--make a results page!! action="/results_page.php"-->
          Rate the quality of this resource:<br>
-         <input type="radio" name="quality" value="veryhigh" id="question1A1"> Very high quality<br>
-         <input type="radio" name="quality" value="high" id="question1A2"> High quality<br>
-         <input type="radio" name="quality" value="neither" id="question1A3"> Neither high nor low quality<br>
-         <input type="radio" name="quality" value="low" id="question1A4"> Low quality<br>
-         <input type="radio" name="quality" value="verylow" id="question1A5"> Very low quality<br>
+         <input type="radio" name="quality" value="veryhigh"> Very high quality<br>
+         <input type="radio" name="quality" value="high"> High quality<br>
+         <input type="radio" name="quality" value="neither"> Neither high nor low quality<br>
+         <input type="radio" name="quality" value="low"> Low quality<br>
+         <input type="radio" name="quality" value="verylow"> Very low quality<br>
          <br>
          Did this resource meet your needs?<br>
-         <input type="radio" name="needs" value="yes" id="question2A1"> Yes<br>
-         <input type="radio" name="needs" value="no" id="question2A2"> No<br>
+         <input type="radio" name="needs" value="yes"> Yes<br>
+         <input type="radio" name="needs" value="no"> No<br>
          <br>
-         How likely are you to recommend this resource to a friend or family member?<br>
-         <input type="radio" name="recommend" value="verylikely" id="question3A1"> Very likely<br>
-         <input type="radio" name="recommend" value="likely" id="question3A2"> Likely<br>
-         <input type="radio" name="recommend" value="neutral"id="question3A3"> Neutral<br>
-         <input type="radio" name="recommend" value="unlikely" id="question3A4"> Unlikely<br>
-         <input type="radio" name="recommend" value="veryunlikely" id="question3A5"> Very unlikely<br>
+         How likely are you to recommend this resource ro a friend or family member?<br>
+         <input type="radio" name="recommend" value="verylikely"> Very likely<br>
+         <input type="radio" name="recommend" value="likely"> Likely<br>
+         <input type="radio" name="recommend" value="neutral"> Neutral<br>
+         <input type="radio" name="recommend" value="unlikely"> Unlikely<br>
+         <input type="radio" name="recommend" value="veryunlikely"> Very unlikely<br>
          <br>
          Overall, how satisfied are you with this resource?<br>
-         <input type="radio" name="satisfied" value="verysatisfied" id="question4A1"> Very satisfied<br>
-         <input type="radio" name="satisfied" value="satisfied" id="question4A2"> Satisfied<br>
-         <input type="radio" name="satisfied" value="neither" id="question4A3"> Neither<br>
-         <input type="radio" name="satisfied" value="unsatisfied" id="question4A4"> Unsatisfied<br>
-         <input type="radio" name="satisfied" value="veryunsatisfied" id="question4A5"> Very unsatisfied<br>
+         <input type="radio" name="satisfied" value="verysatisfied"> Very satisfied<br>
+         <input type="radio" name="satisfied" value="satisfied"> Satisfied<br>
+         <input type="radio" name="satisfied" value="neither"> Neither<br>
+         <input type="radio" name="satisfied" value="unsatisfied"> Unsatisfied<br>
+         <input type="radio" name="satisfied" value="veryunsatisfied"> Very unsatisfied<br>
          <br>
          Do you have any other questions, comments, or concerns?<br>
-         <input type="text" name="lastname" value="" id="question5">
+         <input type="text" name="lastname" value="">
          <br><br>
-         <input type="submit" value="Submit" id="question6A1">
+         <input type="submit" value="Submit">
        </form>
   </div>
 
@@ -100,5 +100,11 @@
     messagingSenderId: "29533452063"
   };
   firebase.initializeApp(config);
+</script>
+<script>
+    $(document).ready(function(){
+    
+
+})
 </script>
 </html>
