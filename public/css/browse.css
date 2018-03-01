@@ -16,16 +16,10 @@ body {
 
 }
 
-.main-holder:after{
-   /*opacity: 1;*/
-}
-
 
 .filter-holder {
    padding-top: 100px;
    text-align: center;
-   width: 500px;
-   height: 100px;
 }
 
 .filter-selector {

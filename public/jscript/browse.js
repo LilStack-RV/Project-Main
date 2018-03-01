@@ -61,3 +61,28 @@ var popCardsInitial = function(cards){
     }
   }
 }
+
+$("#searchbar").keyup(function(e){
+  $("#dropdown").css("display", "inline-block");
+  $("#dropdown").empty();
+  if(e.whch == 13){
+    //Need to store the search in session data to then handle on search.html
+    window.location = "html/search.html";
+  }
+  var input = $("#searchbar").val();
+  for(var i=0; i<cards.length; i++){
+    var cardName = cards[i].name;
+    console.log(input);
+    //if card name matches input thus far, display in results
+    if(cardName.substring(0, input.length).toLowerCase() == input.toLowerCase()){
+      $("#dropdown").append("<p class='cardLink'>" + cardName + "</a>");
+    }
+  }
+})
+
+$(document).on("mousedown", "p.cardLink", function(){
+  console.log("hit the cardLink");
+  console.log($(this).html());
+  sessionStorage.setItem("card", $(this).html());
+  window.location = "apply.html";
+})

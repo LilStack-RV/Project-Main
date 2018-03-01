@@ -2,12 +2,13 @@
 <!-- saved from url=(0061)file:///C:/Users/rodib/RV-Case/Project-Main/public/index.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
    <!--Import jquery-->
-   <script src="./index_files/jquery.min.js.download"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <title>Lil Stack - landing page</title>
-   <link rel="stylesheet" href="./index_files/index.css">
-   <link href="./index_files/bootstrap.css" rel="stylesheet">
-   <link href="file:///C:/Users/rodib/RV-Case/Project-Main/public/css/bootstrap/bootstrap-theme.css" rel="stylesheet">
-   <script src="file:///C:/Users/rodib/RV-Case/Project-Main/public/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/site-wide.css">
+   <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+   <link href="css/bootstrap/bootstrap-theme.css" rel="stylesheet">
+   <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body id="homepage">
@@ -44,7 +45,9 @@
       </li>
    </ul>
    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="searchbar">
+      <div id="dropdown">
+      </div>
       <button class="btn btn-outline-dark text-white my-2 my-sm-0" type="submit">Search</button>
    </form>
    </div>
@@ -101,7 +104,6 @@
    };
    firebase.initializeApp(config);
 </script>
-<script src="./index_files/index.js.download"></script>
-
-
-</body></html>
+<script src="jscript/index.js"></script>
+</body>
+</html>

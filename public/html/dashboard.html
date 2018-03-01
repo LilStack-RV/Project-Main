@@ -60,38 +60,21 @@
          <!-- Row 1-->
          <div class="row" style="background-color: #ffffff">
             <!-- column 1-->
-            <div class="col-lg-6">
+            <div class="col-lg-12 centered">
                <h1>Breakdown of # of applications per card goes here</h1>
-               <table class="table table-bordered">
+               <table class="table table-bordered" id= "applicationPerCardTable">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>Card Name</th>
+        <th># of Applications</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>John</td>
         <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
     </tbody>
   </table>
-            </div>
-            <!-- column 2-->
-            <div class="col-lg-6">
-               <p>Sed ut perspiciatis...</p>
             </div>
          </div>
 
@@ -163,5 +146,5 @@
    };
    firebase.initializeApp(config);
 </script>
-
+<script src="../jscript/dashboard.js"></script>
 </html>

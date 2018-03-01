@@ -16,8 +16,7 @@ body{
   background-color: red;
   width:100%;
   display:inline-block;
-  /*background-color: #bfbfbf;*/
-  background: linear-gradient(rgba(0,130,170,0.5),rgba(0,130,170,1)), url("../images/center-city-charlotte.jpg");
+  background: linear-gradient(rgba(0,130,170,0.5), rgba(0,130,170,1)), url("../images/center-city-charlotte.jpg");
   background-repeat:no-repeat;
   background-position:center;
   background-size:cover;
@@ -113,5 +112,39 @@ body{
 
 .jumbotron {
    margin-bottom: 0px;
+}
 
+#dropdown{
+  width:200px;
+  margin-top:0;
+  text-align: center;
+  height:100px;
+  overflow-y:scroll;
+  display:none;
+  position:absolute;
+  top:50px;
+  background-color:white;
+  padding-left:1px;
+  padding-right:1px;
+}
+
+#dropdown > p{
+  display:inline-block;
+  width:190px;
+  background-color:white;
+  color:black;
+  margin-top:0;
+  margin-bottom:0;
+  border-width:thin;
+  border-style:solid;
+  border-color:black;
+  border-right:0px;
+  border-left:0px;
+  border-top:0px;
+  height:20px;
+  text-align:center;
+  font-size:9px;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
 }
