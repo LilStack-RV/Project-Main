@@ -48,3 +48,37 @@ $(document).on("mousedown", "p.cardLink", function(){
   sessionStorage.setItem("card", $(this).html());
   window.location = "apply.html";
 })
+
+//write results to firebase db, after checking that user has entered value for all fields
+$("#submit-button").click(function(){
+  var quality = $('input:radio[name = "quality"]:checked').attr('value');
+  var meetNeeds = $('input:radio[name = "needs"]:checked').val();
+  var recommend = $('input:radio[name = "recommend"]:checked').val();
+  var satisfaction = $('input:radio[name = "satisfied"]:checked').val();
+  var additionalComments = $("#additional-comments").val();
+  console.log(additionalComments);
+
+  if(quality == undefined || meetNeeds == undefined || recommend == undefined || satisfaction == undefined){
+    alert("please check to make sure all fields are filled out before submitting!")
+  }else{
+    var thisSurvey = firebase.database().ref("/Survey Results/").push();
+
+    thisSurvey.set({
+      Quality: quality,
+      NeedsMet: meetNeeds,
+      RecommentToFriend: recommend,
+      AdditionalComments: additionalComments,
+    })
+
+    var currentSurveyCount;
+    firebase.database().ref("/Survey Results/Num Surveys/").once("value").then(function(snap){
+      currentSurveyCount = snap.val();
+    }).then(function(){
+      currentSurveyCount++;
+      console.log(currentSurveyCount);
+      firebase.database().ref("/Survey Results/Num Surveys/").set(currentSurveyCount);
+    })
+  }
+
+
+})
