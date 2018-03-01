@@ -21,7 +21,7 @@ var handleCards = function(data){
 }
 
 $("#searchbar").keyup(function(e){
-  $("#dropdown").css("visibility", "visible");
+  $("#dropdown").css("display", "inline-block");
   $("#dropdown").empty();
   if(e.whch == 13){
     //Need to store the search in session data to then handle on search.html
@@ -33,8 +33,14 @@ $("#searchbar").keyup(function(e){
     console.log(input);
     //if card name matches input thus far, display in results
     if(cardName.substring(0, input.length).toLowerCase() == input.toLowerCase()){
-      $("#dropdown").append("<a>" + cardName + "</a>");
+      $("#dropdown").append("<p class='cardLink'>" + cardName + "</a>");
     }
   }
+})
 
+$(document).on("mousedown", "p.cardLink", function(){
+  console.log("hit the cardLink");
+  console.log($(this).html());
+  sessionStorage.setItem("card", $(this).html());
+  window.location = "apply.html";
 })
