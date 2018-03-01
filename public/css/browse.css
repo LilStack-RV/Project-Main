@@ -3,13 +3,13 @@ body {
    margin: 0px;
 }
 
-.main-holder {
-   margin-top: 0px;
-   background: #cceeff;
+.btn-light{
+      padding: 10px;
 }
 
-.search-holder {
-   padding-top: 100px;
+.main-holder {
+   margin-top: 0px;
+   background: #ffffff;
 }
 
 .filter-holder {
@@ -48,12 +48,14 @@ body {
    padding-right: 10px;
    height: 400px;
    background-color: #f6f6f6;
+
 }
 
 .card-block{
    margin-left: 15 px;
    margin-right: 15 px;
    background-color: #404040;
+   border: 2px solid;
 }
 
 .card-block-card-header {

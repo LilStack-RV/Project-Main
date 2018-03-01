@@ -1,3 +1,9 @@
+
+.main-holder {
+   margin-top: 10px;
+   background: #cceeff;
+}
+
 .content-holder{
   display: flex;
   flex-direction: column;
@@ -10,4 +16,10 @@
   border-width:thin;
   border-color:blue;
   border-style:groove;
+}
+
+.row{
+   padding-top: 75px;
+   padding-bottom: 75px;
+   height: 500px;
 }

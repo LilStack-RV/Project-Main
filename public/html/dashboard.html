@@ -1,42 +1,167 @@
 <!Doctype html>
 <html>
+
 <head>
-  <!--Import jquery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="../css/site-wide.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
+   <!--Import jquery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <title>Dashboard</title>
+   <link rel="stylesheet" href="../css/site-wide.css">
+   <link rel="stylesheet" href="../css/dashboard.css">
+   <link href="../css/bootstrap/bootstrap.css" rel="stylesheet" />
+   <link href="../css/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+   <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <div class="content-holder">
-    <div class="info-holder">
-      <h1>Breakdown of # of applications per card goes here</h1>
-    </div>
-    <div class="info-holder">
-      <h1>Applications by feature filter here</h1>
-    </div>
-    <div class="info-holder">
-      <h1>Breakdown of user pref. by demographic here</h1>
-    </div>
-    <div class="info-holder">
-      <h1>user preference by geolocation</h1>
-    </div>
-    <div class="info-holder">
-      <h1>Recommended "perfect" credit card</h1>
-    </div>
-  </div>
+
+   <div class="main-holder text-center">
+
+
+      <!-- navbar here-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light font-weight-bold navbar" style="background-color: #ffaa80; ">
+         <a class="navbar-brand" href="../index.html">Our Name</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+   </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="browse.html">Browse</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <!-- Dropdown-->
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="search.html">Search</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success text-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+         </div>
+      </nav>
+      <!-- navbar ends here -->
+
+      <div class="container-fluid">
+
+         <!-- Row 1-->
+         <div class="row" style="background-color: #ffffff">
+            <!-- column 1-->
+            <div class="col-lg-6">
+               <h1>Breakdown of # of applications per card goes here</h1>
+               <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+            </div>
+            <!-- column 2-->
+            <div class="col-lg-6">
+               <p>Sed ut perspiciatis...</p>
+            </div>
+         </div>
+
+         <!-- Row 2-->
+         <div class="row" style="background-color: #e6e6e6">
+            <!-- column 1-->
+            <div class="col-lg-6">
+               <h1>Applications by feature filter here</h1>
+            </div>
+            <!-- column 2-->
+            <div class="col-lg-6">
+               <p>Sed ut perspiciatis...</p>
+            </div>
+         </div>
+
+         <!-- Row 3-->
+         <div class="row" style="background-color: #ffffff">
+            <!-- column 1-->
+            <div class="col-lg-6">
+               <h1>Breakdown of user pref. by demographic here</h1>
+            </div>
+            <!-- column 2-->
+            <div class="col-lg-6">
+               <p>Sed ut perspiciatis...</p>
+            </div>
+         </div>
+
+         <!-- Row 4-->
+         <div class="row" style="background-color: #e6e6e6">
+            <!-- column 1-->
+            <div class="col-lg-6">
+               <h1>user preference by geolocation</h1>
+            </div>
+            <!-- column 2-->
+            <div class="col-lg-6">
+               <p>Sed ut perspiciatis...</p>
+            </div>
+         </div>
+
+         <!-- Row 5-->
+         <div class="row" style="background-color: #ffffff">
+            <!-- column 1-->
+            <div class="col-lg-6">
+               <h1>Recommended "perfect" credit card</h1>
+            </div>
+            <!-- column 2-->
+            <div class="col-lg-6">
+               <p>Sed ut perspiciatis...</p>
+            </div>
+         </div>
+
+
+
+      </div>
+
+   </div>
+
 </body>
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCvX1HUmLmokveaL2jCwg3rIuVa6_ok20s",
-    authDomain: "lil-stack-consulting.firebaseapp.com",
-    databaseURL: "https://lil-stack-consulting.firebaseio.com",
-    projectId: "lil-stack-consulting",
-    storageBucket: "lil-stack-consulting.appspot.com",
-    messagingSenderId: "29533452063"
-  };
-  firebase.initializeApp(config);
+   // Initialize Firebase
+   var config = {
+      apiKey: "AIzaSyCvX1HUmLmokveaL2jCwg3rIuVa6_ok20s",
+      authDomain: "lil-stack-consulting.firebaseapp.com",
+      databaseURL: "https://lil-stack-consulting.firebaseio.com",
+      projectId: "lil-stack-consulting",
+      storageBucket: "lil-stack-consulting.appspot.com",
+      messagingSenderId: "29533452063"
+   };
+   firebase.initializeApp(config);
 </script>
+
 </html>
