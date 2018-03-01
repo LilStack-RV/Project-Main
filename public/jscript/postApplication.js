@@ -77,6 +77,8 @@ $("#submit-button").click(function(){
       currentSurveyCount++;
       console.log(currentSurveyCount);
       firebase.database().ref("/Survey Results/Num Surveys/").set(currentSurveyCount);
+    }).then(function(){
+      window.location = "../index.html";
     })
   }
 
