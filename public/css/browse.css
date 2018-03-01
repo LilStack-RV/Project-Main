@@ -9,12 +9,23 @@ body {
 
 .main-holder {
    margin-top: 0px;
-   background: #ffffff;
+   background: url("../images/browse-page-background.jpg");
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+
 }
+
+.main-holder:after{
+   /*opacity: 1;*/
+}
+
 
 .filter-holder {
    padding-top: 100px;
    text-align: center;
+   width: 500px;
+   height: 100px;
 }
 
 .filter-selector {
