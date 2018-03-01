@@ -1,6 +1,7 @@
 var cards = []; //Going to be used to store cards for dynamic procesising of user searches
 
 $(document).ready(function(){
+  $("#resultHolder").append(sessionStorage.getItem("success"))
   //when document has loaded, make request for cards
   var getCardsUrl = "https://techcase-cards-api.herokuapp.com/api/v1/cards"
   $.ajax(getCardsUrl, {
