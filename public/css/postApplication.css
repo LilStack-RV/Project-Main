@@ -3,6 +3,30 @@
   text-align:center;
 }
 
+.application-header{
+  margin-top: 50px;
+  padding: 5px;
+  padding-bottom: 20px;
+
+   background-color: #404040;
+   color: white;
+}
+
+.application-header > h1{
+   display: inline-block;
+   font-weight: bold;
+   text-align: center;
+   width: 100%;
+}
+
+.application-header > h5{
+   display: inline-block;
+   text-align: center;
+   width: 100%;
+}
+
+
+
 .text-area{
   width:400px;
   height:200px;
