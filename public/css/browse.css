@@ -51,7 +51,7 @@ body {
 .card-text {
    padding-left: 10px;
    padding-right: 10px;
-   height: 400px;
+   height: 120px;
    background-color: #f6f6f6;
 
 }
@@ -69,4 +69,8 @@ body {
 
 .card{
    background-color: #404040;
+}
+
+h3.card-header{
+  font-size:15px;
 }

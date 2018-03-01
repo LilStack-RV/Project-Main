@@ -38,9 +38,13 @@ $("#searchbar").keyup(function(e){
   }
 })
 
+$("#searchbar").focusout(function(){
+  $("#dropdown").css("display", "none");
+})
+
 $(document).on("mousedown", "p.cardLink", function(){
   console.log("hit the cardLink");
   console.log($(this).html());
   sessionStorage.setItem("card", $(this).html());
-  window.location = "apply.html";
+  window.location = "html/apply.html";
 })
