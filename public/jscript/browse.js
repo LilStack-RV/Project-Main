@@ -16,7 +16,6 @@ $(document).ready(function(){
 var handleCards = function(data){
   data.forEach(function(card){
     cards.push(card);
-    console.log(card);
   })
   popCardsInitial(cards);
 }
@@ -89,4 +88,55 @@ $(document).on("mousedown", "p.cardLink", function(){
   console.log($(this).html());
   sessionStorage.setItem("card", $(this).html());
   window.location = "apply.html";
+})
+
+$("#filterButton").click(function(){
+  var filteredCards = cards;
+
+  if($("#lowApr").is(":checked")){
+    //filter out cards that have regular apr > 0.2
+    for(var i=0; i<filteredCards.length; i++){
+      console.log("apr rate:");
+      console.log(filteredCards[i].regular_apr.rate);
+      console.log(parseInt(typeof filteredCards[i].regular_apr.rate));
+      if((typeof filteredCards[i].regular_apr.rate) == String){
+        filteredCards[i].regular_apr.rate = Number(filteredCards[i].regular_apr.rate);
+      }
+
+      if(filteredCards[i].regular_apr.rate > 0.2){
+        console.log("inside of if statement for low apr");
+        filteredCards.splice(i,1);
+      }
+    }
+  }
+
+  if($("#cashBack").is(":checked")){
+    //filter out cards that do not have cash back as one of their tags
+    for(var i=0; i<filteredCards.length; i++){
+      if(!(filteredCards[i].tags.includes('cashback'))){
+        filteredCards.splice(i,1);
+      }
+    }
+  }
+
+  if($("#zeroIntroApr").is(":checked")){
+    //filter out cards that do not have zero intro apr
+    for(var i=0; i<filteredCards.length; i++){
+      if(!(filteredCards[i].intro_apr[2])){
+        filteredCards.splice(i,1);
+      }
+    }
+  }
+
+  if($("#travel").is(":checked")){
+    //filter out cards that do not have travel tag
+    for(var i=0; i<filteredCards.length; i++){
+      if(!(filteredCards[i].tags.includes('travel'))){
+        filteredCards.splice(i,1);
+      }
+    }
+  }
+
+  console.log(filteredCards);
+
 })
