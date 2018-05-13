@@ -2,28 +2,58 @@
 .main-holder {
    margin-top: 10px;
    background: #cceeff;
+   width: 100%;
 }
 
-.content-holder{
-  display: flex;
-  flex-direction: column;
+.container-fluid{
+   padding: 0px;
+
 }
+
 
 .info-holder{
   width:100%;
   height:200px;
   text-align:center;
-  border-width:thin;
-  border-color:blue;
-  border-style:groove;
+
+}
+.buttonColumn{
+   margin-left:auto;
+   margin-right:0;
+}
+.filterTitles{
+   padding: 2px;
+   margin-bottom: 20px;
+   width: 70%;
+   border: .5px solid;
+   min-width: 10px;
+   height:40px;
+   border: 1px solid;
+
+
 }
 
-.row{
-   padding-top: 75px;
-   padding-bottom: 75px;
-   height: 500px;
+.mainRow{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 100%;
+   margin-left: 0px;
+   margin-right: 0px;
+
 }
 
 #applicationPerCardTable{
-   margin-top: 100px;
+   margin-top: 40px;
+}
+
+.filterProgressBar{
+   width: 90%;
+}
+
+.progress{
+   padding: 2px;
+   margin-bottom: 20px;
+   border: .5px solid;
+   min-width: 10px;
+
 }

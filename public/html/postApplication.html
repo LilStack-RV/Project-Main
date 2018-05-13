@@ -13,78 +13,80 @@
 <body>
    <!-- navbar here-->
    <nav class="navbar navbar-expand-lg fixed-top navbar-light font-weight-bold navbar" style="background-color: #ffaa80; ">
-<a class="navbar-brand" href="#">Our Name</a>
+<a class="navbar-brand" href="../index.html">Card Overflow</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
-   <li class="nav-item active">
+   <li class="nav-item">
      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
    </li>
    <li class="nav-item">
      <a class="nav-link" href="browse.html">Browse</a>
    </li>
    <li class="nav-item dropdown">
-     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <a class="nav-link " href="#" id="navbarDropdown" role="button" >
       <!-- Dropdown-->
      </a>
-     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-       <a class="dropdown-item" href="#">Action</a>
-       <a class="dropdown-item" href="#">Another action</a>
-       <div class="dropdown-divider"></div>
-       <a class="dropdown-item" href="#">Something else here</a>
-     </div>
+
    </li>
-   <li class="nav-item">
-     <a class="nav-link" href="search.html">Search</a>
-   </li>
+
 </ul>
 <form class="form-inline my-2 my-lg-0">
-   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="searchbar">
+   <div id="dropdown">
+   </div>
    <button class="btn btn-outline-dark text-white my-2 my-sm-0" type="submit">Search</button>
 </form>
 </div>
 </nav>
 <!-- navbar ends here -->
 
+<div class="row application-header">
+  <h1 id="resultHeader">Success!</h1>
+   <h1 style="text-align:center;">Your feedback is important to us.</h1>
+   <h5>Please fill out this customer satisfaction survey so that
+      we can improve our service to better meet your needs.</h5>
+
+
+</div>
+
    <div class="main-holder">
-      <h2 style="text-align:center;">Your feedback is important to us.</h2>
-      <h3>Pleeeeeease fill out this customer satisfaction survey so that
-         we can improve our service to better meet your needs.</h3>
+
        <form method="post">
          <!--make a results page!! action="/results_page.php"-->
          Rate the quality of this resource:<br>
-         <input type="radio" name="quality" value="veryhigh"> Very high quality<br>
+         <input type="radio" name="quality" value="very high"> Very high quality<br>
          <input type="radio" name="quality" value="high"> High quality<br>
          <input type="radio" name="quality" value="neither"> Neither high nor low quality<br>
          <input type="radio" name="quality" value="low"> Low quality<br>
-         <input type="radio" name="quality" value="verylow"> Very low quality<br>
+         <input type="radio" name="quality" value="very low"> Very low quality<br>
          <br>
          Did this resource meet your needs?<br>
          <input type="radio" name="needs" value="yes"> Yes<br>
          <input type="radio" name="needs" value="no"> No<br>
          <br>
          How likely are you to recommend this resource ro a friend or family member?<br>
-         <input type="radio" name="recommend" value="verylikely"> Very likely<br>
+         <input type="radio" name="recommend" value="very likely"> Very likely<br>
          <input type="radio" name="recommend" value="likely"> Likely<br>
          <input type="radio" name="recommend" value="neutral"> Neutral<br>
          <input type="radio" name="recommend" value="unlikely"> Unlikely<br>
-         <input type="radio" name="recommend" value="veryunlikely"> Very unlikely<br>
+         <input type="radio" name="recommend" value="very unlikely"> Very unlikely<br>
          <br>
          Overall, how satisfied are you with this resource?<br>
-         <input type="radio" name="satisfied" value="verysatisfied"> Very satisfied<br>
+         <input type="radio" name="satisfied" value="very satisfied"> Very satisfied<br>
          <input type="radio" name="satisfied" value="satisfied"> Satisfied<br>
          <input type="radio" name="satisfied" value="neither"> Neither<br>
          <input type="radio" name="satisfied" value="unsatisfied"> Unsatisfied<br>
-         <input type="radio" name="satisfied" value="veryunsatisfied"> Very unsatisfied<br>
+         <input type="radio" name="satisfied" value="very unsatisfied"> Very unsatisfied<br>
          <br>
          Do you have any other questions, comments, or concerns?<br>
-         <input type="text" name="lastname" value="">
+         <input id="additional-comments" type="text" name="additional-comments" value="">
          <br><br>
-         <input type="submit" value="Submit">
        </form>
+       <input id="submit-button" type="button" value="Submit">
   </div>
 
 </body>
@@ -101,4 +103,5 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="../jscript/postApplication.js"></script>
 </html>
